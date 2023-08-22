@@ -1,3 +1,4 @@
+/*
 package com.batch.config;
 
 import com.batch.model.User;
@@ -72,14 +73,16 @@ public class BatchConfig {
 
 
     //this method uses Jdbc, where you need to write the whole quesry by yourself
-   /* @Bean
+   */
+/* @Bean
     public JdbcBatchItemWriter<User> writer(){
         JdbcBatchItemWriter<User> writer = new JdbcBatchItemWriter<>();
         writer.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<User>());
         writer.setSql("INSERT INTO users(id,first_name,last_name,city,ph) values (:id,:FirstName,:LastName,:City,:Ph)");
         writer.setDataSource(this.dataSource);
         return writer;
-    }*/
+    }*//*
+
 
 
     //this method uses jpa Repository
@@ -115,3 +118,4 @@ public class BatchConfig {
     }
 
 }
+*/
